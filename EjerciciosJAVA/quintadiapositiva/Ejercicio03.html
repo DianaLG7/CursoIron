@@ -1,0 +1,71 @@
+<!--//Añadir 3 elementos más al archivo de datos.
+//Crear programa que muestra todos los libros a petición del usuario.
+//Crear otra función en el programa que muestra los libros de precio mayor que 20
+//Añadir función al programa donde el usuario elige el autor y ve los libros correspondientes-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 03 JS</title>
+        <script>  
+            class libro {constructor() 
+                {
+                    this.arrayLibros = 
+                    [{"id" : "978-0641723445","cat" : ["book","hardcover"],  "name" : "The Lightning Thief",  "author" : "Rick Riordan",
+                       "series_t" : "Percy Jackson and the Olympians",  "genre_s" : "fantasy","inStock" : true,"price" : 12,
+                       "pages_i" : 384},
+                       {"id" : "978-1857995879","cat" : ["book","paperback"], "name" : "Sophie's World : The Greek Philosophers",  "author" : "Jostein Gaarder",
+                       "genre_s" : "fantasy","inStock" : true,"price" : 3,"pages_i" : 64 },
+                        {"id" : "978-1933988177","cat" : ["book","paperback"],"name" : "Lucene in Action, Second Edition",  "author" : "Michael McCandless",
+                         "genre_s" : "IT","inStock" : true,"price" : 30,"pages_i" : 475 }]
+                }
+                arrayPrimerLibro() 
+                {
+                    let arrayMenores = [];
+                    let cota = parseInt(document.getElementById("txtMenor").value);  
+                    let datos = this.arrayLibros;
+                    for( let i = 0; i < datos.length; i++) 
+                    {
+                        if (datos[i]<cota) arrayMenores[i] = datos[i];
+                    }
+                    document.getElementById("salidaDatos").innerHTML = arrayMenores ;
+                }
+                arraySegundoLibro() 
+                {  
+                    var texto = "";
+                    let datos = this.arrayLibros;  
+                    datos.forEach(function(item, index)
+                    {
+                        if (item>) texto += `<p> dato Mayor50: ${item}`;
+                    }
+            );
+                    document.getElementById("salidaDatos").innerHTML = texto ;
+                }
+                arrayTercerLibro() 
+                {
+                    let arrayMenores = [];
+                    let cota = parseInt(document.getElementById("txtMenor").value);  
+                    let datos = this.arrayLibros;
+                    for( let i = 0; i < datos.length; i++) 
+                    {
+                        if (datos[i]<cota) arrayMenores[i] = datos[i];
+                    }
+                    document.getElementById("salidaDatos").innerHTML = arrayMenores ;
+                }
+            }
+            function programa(valor) 
+            {  
+                var obj = new libro();
+                if (valor==2) obj.arrayMenoresX();
+                if (valor==3) obj.mostrarMayorX(50)
+        }
+        </script>
+    </head>
+    <body>
+    <h3>Libros de fantasia </h3>
+    <form>Agregar:<input type="text" size="10" id="txtMenor"/>
+    <input type="button" value="arrayPrimerLibro" onclick="programa(2)" /></form>
+    <input type="button" value="arraySegundoLibro" onclick="programa(3)" />
+    <input type="button" value="arrayTercerLibro" onclick="programa(3)" />
+    <div id="salidaDatos"></div>
+    </body>
+</html>

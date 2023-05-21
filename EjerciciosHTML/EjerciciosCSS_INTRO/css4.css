@@ -1,0 +1,10 @@
+/**Esto es para restablecer todos los valores de propiedad**/
+blockquote {
+    background-color: red;
+    border: 2px solid green;
+}
+        
+.fix-this {
+    all: unset;
+}
+

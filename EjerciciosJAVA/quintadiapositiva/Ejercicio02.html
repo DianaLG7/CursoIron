@@ -1,0 +1,37 @@
+<!--Realizar programa donde introduciendo la edad de un niño y su altura, el programa  indica la estatura aproximada que tendrá de adulto.
+Una forma de calcular la estatura adulta es multiplicar por 2 la estatura de un niño a los 2 años o la de una niña a los 18 meses.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="Shortcut Icon" href="salud.ico" type="image/x-icon">
+        <title>Altura Referencia</title>
+        <script>
+            function alturareferencia(datoaltura=1, datoedad=1, datosexo=N)
+            {
+                let sexo = parseInt(datosexo); 
+                let altura = parseInt(datoaltura);  
+                let edad = parseInt(datoedad); 
+                if (datosexo == "n" || datosexo=="H")
+                {
+                    resultado=(edad * 2 * altura) / 24;
+                }
+                else resultado=(edad * 2 * altura) / 18;
+                    document.getElementById("resultado").innerHTML = resultado;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>♥Ingresa tus datos en el siguiente formulario conocer tu altura aproximado:</h1>
+        <h2> </h2>
+        <form name="fdatos"><br>
+            <h3>Edad en meses (ej: 6) <input type="text" size="10" name="edad"/></h3>
+            <h3>Altura en cm (ej: 105)  <input type="text" size="10" name="altura"/></h3>
+            <h3>Sexo (ej: H,M)  <input type="text" size="10" name="sexo"/></h3>
+        <input id="pideal" type="button" value="Calcula" onclick="alturareferencia(fdatos.altura.value,fdatos.edad.value, fdatos.sexo.value)" />
+        <input type="reset" value="Reset" />
+        </br></br><p> La estatura aproximada que tendrá de adulto es:<span id="resultado"></span></p> 
+        </form>
+    </body>
+</html>

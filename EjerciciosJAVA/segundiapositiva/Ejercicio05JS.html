@@ -1,0 +1,32 @@
+<!--Crear programa donde se introduce una temperatura en ºCelsius sale el resultado en ºFahrenheit.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Shortcut Icon" href="termometro.png" type="image/x-icon">
+        <meta charset="utf-8"/>
+        <title>Conversor de ºCelsius a ºFahrenheit</title>
+        <script>
+        function EntraData() {
+        let txt = document.getElementById("tempEntrada");  let temp = parseInt(txt.value);
+        return temp;
+        }
+        function EscriuData(nomZona, text) {  
+            document.getElementById(nomZona).innerHTML = text;
+        }
+        function toFahrenheit() //Funcion donde se realiza el calculo de la conversion de ºCelsius a ºFahrenheit
+        {  
+            let temp = EntraData();
+            temp = ((1.8) * temp + 32);
+            EscriuData('Zona1', temp + " ºF"); 
+        }
+        
+        </script>
+    </head>
+    <body>
+        <h2>Conversor de ºCelsius a ºFahrenheit</h2>
+        <input type="text" name="tempEntrada" id="tempEntrada">
+        <input type="button" value="Convertir a Fahrenheit" onClick="toFahrenheit()">
+        <div id="Zona1"></div>
+    </body>
+</html>
