@@ -1,0 +1,53 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>Ejercicio_05</title>
+    </head>
+    <body>
+        <form>
+            <section>
+                <p>Lista de datos</p> 
+                <fieldset>
+                    <label for="inputLista">Lista de programas</label> <input list="listap" name="inputLista">
+                    <datalist id="listap">
+                        <option value="Visual Studio Code">
+                        <option value="PyCharm">
+                        <option value="Cisco Packet Tracer"> 
+                        <option value="Proteus">
+                    </datalist>
+                </fieldset>
+            </section>
+            <section>
+                <p>URL's de videos en YouTube</p>
+                <fieldset>
+                    <label for="selector">Ingresa la(s) URL's de videos que mas te gusten:</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" list="listaurls" required>
+                <datalist id="listaurls">
+                    <option value="https://youtu.be/hLRoDs4wNCU" label="by YouTube" > 
+                    <option value="https://youtu.be/DUyqHyFWvFc" label="by YouTube">
+                </datalist>
+                </fieldset>
+            </section> 
+            <section>
+                <p>Rango</p>
+                <fieldset>
+                    <label for="range">Selecciona un rango</label> 
+                    <input type="range" list="listanums" step="1" name="range" max="6" min="0"> 
+                    <datalist id="listanums">
+                        <option value="0" label="cero"></option>
+                        <option value="1" label="uno"></option>
+                        <option value="2" label="dos"></option>
+                        <option value="3" label="tres"></option>
+                        <option value="4" label="cuatro"></option>
+                        <option value="5" label="cinco"></option>
+                    </datalist>
+                </fieldset>
+            </section>
+            <br>
+            <input type="submit" name="btn_enviar" value="Enviar">
+            </input>
+            <input type="reset" name="btn_limpiar" value="Limpiar">
+            </input>
+        </form> 
+    </body>
+</html>

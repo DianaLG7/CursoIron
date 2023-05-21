@@ -1,0 +1,122 @@
+header{
+    display: flex;
+    justify-content:center;
+    color: black;
+    border-style:solid;
+    width: 100%;
+    height: 160px;
+}
+.he2{
+    display: flex;
+    color: rgb(0, 0, 0);
+    border-style:solid;
+    border-color: orangered;
+    width: 690px;
+    height: 40px;
+}
+.he3{
+    display: flex;
+    color: black;
+    border-style:solid;
+    border-color: orangered;
+    width: 690px;
+    height: 40px;
+}
+.menu{
+    justify-content:end;
+    text-align:center;
+    background-color: antiquewhite;
+    border-style:solid;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;   
+}
+.menud{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-style:solid;
+    width: 580px;  
+    height: 500px;
+    float: left; 
+}
+div{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    border-color: black;
+    border-style: solid;
+    width: 100%;
+    height: 500px;
+}
+section{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%; 
+    height: 500px;   
+}
+.s1{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    border-color: rgb(8, 251, 32);
+    border-style: solid;
+    width: 700px;
+    height: 250px;     
+}
+details{
+    border-color: red;
+    border-style: solid;
+}
+.s2{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    border-color: rgb(29, 12, 215);
+    border-style: solid;
+    width: 700px;
+    height: 250px;
+}
+.a1{
+    align-items:center;
+    border-color: rgb(79, 9, 230);
+    border-style: solid;
+}
+.a2{
+    align-items:center;
+    border-color: rgb(79, 9, 230);
+    border-style: solid;
+    width: 700px;
+}
+footer{
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    width: 100%;
+    height:50px;
+}
+.f2{
+    text-align:center;
+    border-color: black;
+    border-style: solid;
+}
+.f3{
+    text-align:center;
+    border-color: black;
+    border-style: solid;
+    height: 40px;
+}
+aside{
+    text-align: center;
+    color: black;
+    border-color: black;
+    border-style:solid;
+    width: 600px;
+    height: 500px;
+    float:right;
+}

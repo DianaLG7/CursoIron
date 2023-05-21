@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio_07</title>
+        <meta charset="utf-8"> <title>Enlaces</title>
+    </head> 
+    <body>
+        <header id="inicio">
+            <h1>Ejercicio de enlaces</h1> 
+            <ul>
+                <li> <a href="mailto:someone@example.com">Enviar mail </a> </li> 
+                <li> <a href="tel:+4733378981"> Llamada telefonica </a> </li>
+                <!--[protocol]: [username]?[action] chat/call/sendfile/add/userinfo-->
+                <li><a href="skype:example1237chat"> Skype </a> </li>
+                <!--[protocol]: [action]?[text= 1&[phone=+] -->
+                <li> <a href="whatsapp://send?text=Tu mensaje&phone +123456789***">Whatsapp1</a></li>
+                <li> <a href="https://api.whatsapp.com/send?phone=15551234567">Whatsapp2</a></li>
+                <li> <a href="#footer"> Seccion del documento (anclas) </a></li>
+                <li> <a href="javascript:alert('Hello World!');">JavaScript</a></li>
+            </ul>
+            Semántica
+            <ul>
+                <li> <a href="https://www.google.com" target="_blank">Google (blank)</a></li>
+                <li> <a href="https://www.google.com" target="_parent" >Google (top)</a></li> 
+                <!--rel: especifica la relación entre el documento actual y el documento ligado--> 
+                <li><a href="http://intranet.ids.com.mx" rel="author">Intranet IDS</a></li> 
+            </ul>
+</header>
+<section id="seccion1"> 
+    <article>
+        <hr>
+        <br><br><br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nostrum vero dolo 'Corem,"pubolor 
+        sit amet consectetur adipisicing elit. 'Conséqâtúr˜ap Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Nihil dolorum quod porro quod
+        <br><br><br><br><br><br>
+    </article> 
+</section>
+<footer id="footer">
+    <a href="#inicio" rel="">inicio</a>
+    <p>Posted by: me</p>
+    <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
+</footer>
+</body>
+</html>

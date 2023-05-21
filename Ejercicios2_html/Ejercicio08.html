@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title> Ejercicio 08 </title>
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <form name="miformulario" id="miform" action="formularios.php" method="post"enctype="multipart/form-data">
+            <section>
+                <p ondblclick="this.style.color='red' "">Datos Personales</p> 
+                <fieldset>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre"  value=""/>
+                    </div><br>
+                   <div>
+                       <label for="password">Edad:</label>
+                       <input type="number" name="edad" id="edad" value=""/>
+                   </div>
+                    </datalist>
+                </fieldset>
+            </section>
+            <section>
+                <p ondblclick="this.style.color='red' ">Cultura General </p>
+                <fieldset>
+                    <div>
+                        <label for="cn">Capital de Noruega:</label>
+                        <input type="radio" />
+                        <label for="co">Copenhague</label>
+                        <input type="radio"  />
+                        <label for="h">Helsinki</label>
+                        <input type="radio" />
+                        <label for="o">Oslo</label>                    
+                    </div><br>
+                    <div>
+                        <label for="f">Fecha de la Revolución francesa:</label>
+                        <input type="radio" />
+                        <label for="f1">1492</label>
+                        <input type="radio"  />
+                        <label for="f2">1789</label>
+                        <input type="radio" />
+                        <label for="f3">1917</label>                    
+                    </div>
+                </fieldset>
+            </section>
+            <br>
+            <input type="submit" name="btn_enviar" value="Enviar"> 
+            <input type="reset" name="btn_limpiar" value="Borrar">
+        </form>
+        <section>
+            <h1>HTML5 number input</h1>
+        </section>
+        <section>
+            <p ondblclick="this.style.color='red'">Ejemplo 1 </p>
+            <form name="miformulario" id="miform" action="formularios.php" method="post"enctype="multipart/form-data">
+                <div>
+                    <label for="anos">Introduce tu edad:</label>
+                    <input type="number" name="anos" id="anos" value="" required
+                    pattern="\d{1,2}"
+                    />
+                    <input type="submit" name="submit" value="Enviar" id="submit"/>
+                </div>
+            </form>
+        </section>
+        <section>
+            <p ondblclick="this.style.color='red'"">Ejemplo 2 </p>
+            <form name="miformulario" id="miform" action="formularios.php" method="post"enctype="multipart/form-data">
+                <div>
+                    <label for="anos">Introduce tu edad (min=18 max=99, campo obligatorio):</label>
+                    <input type="number" name="anos" id="anos" value="Por favor, llenar este campo" required
+                    pattern="\d{1,2}"
+                    />
+                    <input type="submit" name="submit" value="Enviar" id="submit"/>
+                </div>
+            </form>
+        </section>
+        <section>
+            <p ondblclick="this.style.color='red'">Ejemplo 3 </p>
+            <form name="miformulario" id="miform" action="formularios.php" method="post"enctype="multipart/form-data">
+                <div>
+                    <label for="anos">Introduce tu edad (min=18 max=99, campo obligatorio):</label>
+                    <input type="number" name="anos" id="anos" value="" required
+                    pattern="\d{1,2}"
+                    />
+                    <input type="submit" name="submit" value="Enviar" id="submit"/>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

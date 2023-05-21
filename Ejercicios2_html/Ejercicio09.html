@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title> Ejercicio 09 </title>
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="est09.css">
+
+        <style>
+            *{
+                border: 1px;
+                margin: 0;
+            }
+            table{
+                border: 1;
+                margin: 0;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+            }
+            header,footer, section, input, textarea, table, aside, nav{
+                border:1px rgb(0, 0, 0) solid;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h2>Información sobre el producto</h2>
+        <br><br>
+        <form name="miformulario" id="miform" action="formularios.php" method="post" enctype="multipart/form-data">
+            <section>
+                <p>Datos básicos</p> 
+                <fieldset>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre"  value=""/>
+                    </div><br>
+                   <div>
+                       <label for="password">Descripción:</label><br>
+                       <textarea name="detalles" id="detalles"></textarea>
+                   </div>
+                    </datalist>
+                </fieldset>
+            </section>
+            <br><br>
+            <div>
+                <label for="foto">Foto:</label>
+                <input type="file" name="fichero[]" id="foto" multiple="multiple" value=""/>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="cont" name="cont" checked="checked"
+                />
+                <label for="cont">Añadir contador de visitas</label>
+            </div>
+            <br><br>
+            <section>
+                <p>Datos económicos </p>
+                <fieldset>
+                    <div>
+                        <label for="nombre">Precio </label>
+                        <input type="text" name="nombre" id="nombre"  value=""/>
+                        <label for="nombre">€</label>
+                        <label for="anos">Impuestos </label>
+                        <input type="number" name="des" id="des" placeholder="4" value="" required
+                        pattern="\d{1,2}"
+                        /> %
+                    </div><br>
+                    <div>
+                        <label for="f">Promoción:</label><br>
+                        <input type="radio" checked="checked"/>
+                        <label for="f1">Ninguna</label><br>
+                        <input type="radio"  />
+                        <label for="f2">Transporte gratuito</label><br>
+                        <input type="radio" />
+                        <label for="f3">Descuento 5%</label>                    
+                    </div>
+                </fieldset>
+            </section>
+        </form>
+        <h1>Análisis de ventas anuales</h1>
+        <section class="t">
+            <table border="0" style="width:70%" data-number-of-years="N,N1,N2,N3" data-number-of-products-displayed="4" 
+            data-name-of-the-products="Producto A, Producto B, Producto C, Producto D" data-table-title="Análisis de ventas anuales">
+                <tr>
+                  <th rowspan="2">AÑO</th>
+                  <th colspan="4"> Expanción de ventas</th>
+                </tr>
+                <tr>
+                    <th>Producto A</th>
+                    <th>Producto B</th>
+                    <th>Producto C</th>
+                    <th>Producto D</th>
+                 </tr>
+                <tr>
+                    <th>N-3</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>N-2</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>N-1</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>N</th>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+                 <tr>
+                    <th rowspan="2">AÑO</th>
+                    <th>Producto A</th>
+                    <th>Producto B</th>
+                    <th>Producto C</th>
+                    <th>Producto D</th>
+                 </tr>
+                 <tr>
+                  
+                  <th colspan="4"> Expanción de ventas</th>
+                </tr>
+              </table>
+        </section>
+    </body>
+</html>

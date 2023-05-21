@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo</title>
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <img id="miImagen" src="miphoto.jpeg" alt="Mi llavero" data-camara="Camara de Huawei Mate 10 Lite" 
+            data-efecto="Efectos aplicados a esta foto" data-geo="Longitud y latitud" 
+            data-fecha="La fecha en que se tomó la foto" />
+        </section>
+        <script type="text/javascript">
+            var imgsConEfecto = document.querySelectorAll('img [data-efecto]');
+            document.getElementById('miImagen').dataset.camara;
+            var elemento = document.getElementById('miImagen');
+            var cam = elemento.dataset.camara;// "Modelo de la cámara que utilicė“
+            var attribute = elemento.getAttribute("data-geo"); 
+            elemento.setAttribute("data-geo", "someName");
+            console.log('atributos data '); console.log(camara );
+        </script>
+    </body>
+</html>
