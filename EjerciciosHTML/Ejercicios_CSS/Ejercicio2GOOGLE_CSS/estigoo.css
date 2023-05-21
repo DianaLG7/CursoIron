@@ -1,0 +1,72 @@
+.titulo{
+    display: flex;
+    justify-content:center;
+    align-self:stretch;  
+}
+h1{
+    font:xx-large;
+    font-family:inherit;
+    font-style:normal;
+    font-size: 115px;
+}
+.l1{
+    color: rgb(3, 87, 223);
+}
+.l2{
+    color: red;
+}
+.l3{
+    color:orange;
+}
+.l4{
+    color: rgb(3, 87, 223);
+}
+.l5{
+    color: rgb(9, 194, 9);
+}
+.l6{
+    color: red;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color:rgb(227, 227, 227);
+    border: 0ch;
+    cursor:pointer;
+}
+
+/****/
+div{
+    max-width: 720px;
+    position: relative;
+}
+  
+/**El icono debe ser "position: absolute"
+Ademas le damos un "display: block" y lo posicionamos **/
+#icon{
+    position: absolute;
+    display: block;
+    bottom: .8rem;
+    left: 1rem;
+    height: 1rem;
+}
+#icond{
+    position: absolute;
+    display: block;
+    bottom: .8rem;
+    right: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+input.input{
+    padding-left: 2.5rem;
+    border-radius: 1rem;
+    height: 35px;
+    width: 380px;
+    border-color: rgb(181, 181, 182);
+}
