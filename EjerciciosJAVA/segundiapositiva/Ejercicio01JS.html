@@ -1,0 +1,26 @@
+<!--Realizar programa con la introducción de la edad por parte del  usuario. 
+    NO PERMITIR EDADES MENORES QUE 1 AÑO NI MAYORES QUE 120 años. La computadora indica  que: 
+    "Sí tiene permiso de acceso" si la edad es mayor que 18 años.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 01 JS</title>
+        <script>
+            let edad, respuesta;
+            edad = prompt("edad?", "0");
+            if(edad > 18 && edad<120)
+            {
+                respuesta="Sí tiene permiso de acceso";
+            }
+            else if (edad<1) 
+            {
+                respuesta = "Demasiado joven no puedes entrar";
+            } 
+            else if (edad>120) 
+            {
+                respuesta = "No se admiten mayores de 120 años";
+            }
+               document.write(respuesta);
+        </script>
+    </head>
+</html>

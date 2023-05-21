@@ -1,0 +1,46 @@
+<!--Añade una función que recibe como parámetro ºFahrenheit y que saca por pantalla las siguientes frases:
+        1)Si ºF está entre 14 y 32, sale la frase “Temperatura baja”
+        2)Si ºF está entre 32 y 68, sale la frase “Temperatura adecuada”
+        3)Si ºF está entre 68 y 96, sale la frase “Temperatura alta”
+        4)Si no está entre ningún caso anterior la frase “Temperatura desconocida”-->
+
+        <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Shortcut Icon" href="termometro.png" type="image/x-icon">
+        <meta charset="utf-8"/>
+        <title>Conversor de ºCelsius a ºFahrenheit</title>
+        <script>
+        function EntraData() {
+        let txt = document.getElementById("tempEntrada");  let temp = parseInt(txt.value);
+        return temp;
+        }
+        function EscriuData(nomZona, text) {  
+            document.getElementById(nomZona).innerHTML = text;
+        }
+        function toFahrenheit() {  
+            let temp = EntraData();
+            temp = ((1.8) * temp + 32);
+            EscriuData('Zona1', temp + " ºF"); // por pantalla la temp resultado  
+            FraseRelativa(temp);
+        }
+        
+        function FraseRelativa(temperatura) 
+        {  
+            let cadena="-";
+            if ((temperatura >=  14)  &&   (temperatura <  32))   cadena  ="Temperatura  baja";
+            if ((temperatura >= 32) && (temperatura < 68)) cadena ="Temperatura adecuada";  
+            if ((temperatura >= 68) && (temperatura <= 96)) cadena ="Temperatura alta";
+            if (cadena=="-") cadena = "Temperatura desconocida";  
+            EscriuData('Zona2', cadena);
+        }
+        </script>
+    </head>
+    <body>
+        <h2>Conversor de ºCelsius a ºFahrenheit</h2>
+        <input type="text" name="tempEntrada" id="tempEntrada">
+        <input type="button" value="Pasar a Fahrenheit" onClick="toFahrenheit()">
+        <div id="Zona1"></div>
+        <div id="Zona2"></div>
+    </body>
+</html>

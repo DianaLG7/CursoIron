@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head><title> Ejemplo 05 JS</title> </head>
+  <body>
+    <h2>JavaScript Class Method</h2>
+    <p>¿Cómo definir y usar un método Class?</p>
+    <p id="demo"></p>
+
+    <script>
+      class Car {constructor(name, year) {
+        this.name = name;
+        this.year = year;
+      }
+      age() {
+        let date = new Date();
+        return date.getFullYear() - this.year;
+      }
+    }
+      let myCar = new Car("Ford", 2010);
+      document.getElementById("demo").innerHTML ="My car is " + myCar.age() + " years old.";
+    </script>
+  </body>
+</html>
