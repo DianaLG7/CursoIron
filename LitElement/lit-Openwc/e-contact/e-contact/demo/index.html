@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>Práctica 8: LitElement-E-Contact</title>
+  <script type="module" src='../dist/src/EContact.js'></script>
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body> 
+  <ul>
+    <li><e-contact email="some_email@mail.com" nombre="Diana López"/>
+      #shadow-root (open) ==$0
+      <!---->
+      div{
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      h1{
+        font-size: 1.2em;
+        font-weight: normal;
+      }
+      <styles>
+        <div>...</div>
+      </styles>
+    </li>
+    <li><e-contact email="some_email_2@mail.com" nombre="Luis Martinez" verMas/>
+    </li>
+  </ul>  
+  <e-contact></e-contact>
+</body>
+</html>
